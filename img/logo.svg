@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 245 45" style="enable-background:new 0 0 245 45;" xml:space="preserve">
+    <style type="text/css">
+    svg {
+        transform-origin: 50% 50%;
+        margin: auto;
+        max-height: 90vh;
+      }
+      path {
+        stroke: #fff;
+        stroke-opacity: 0;
+        stroke-width: 1;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill-opacity: 0;
+        animation: offset 3s linear forwards,
+                    disappear 1s forwards,
+                    move-left 1.5s ease-in-out;
+        -webkit-animation: offset 3s linear forwards,
+                            disappear 1s forwards,
+                            move-left 1.5s ease-in-out;
+      }
+
+      path:nth-of-type(1) {
+        stroke-dasharray: 233;
+        stroke-dashoffset: 233;
+        animation-delay: 0s, 3.5s, 4.2s;
+      }
+
+      path:nth-of-type(2) {
+        stroke-dasharray: 255;
+        stroke-dashoffset: 255;
+        animation-delay: 1s, 3.5s, 4.4s;
+      }
+
+      path:nth-of-type(3) {
+        stroke-dasharray: 392;
+        stroke-dashoffset: 392;
+        animation-delay: 0.5s, 3.5s, 4.6s;
+      }
+
+      path:nth-of-type(4) {
+        stroke-dasharray: 392;
+        stroke-dashoffset: 392;
+        animation-delay: 1.4s, 3.5s, 4.8s;
+      }
+
+      path:nth-of-type(5) {
+        stroke-dasharray: 392;
+        stroke-dashoffset: 392;
+        animation-delay: 1.2s, 3.5s, 5.0s;
+      }
+
+      path:nth-of-type(6) {
+        stroke-dasharray: 255;
+        stroke-dashoffset: 255;
+        animation-delay: 2s, 3.5s, 5.2s;
+      }
+
+      path:nth-of-type(7) {
+        stroke-dasharray: 392;
+        stroke-dashoffset: 392;
+        animation-delay: 1.6s, 3.5s, 5.4s;
+      }
+
+      @keyframes offset {
+        100% {
+          stroke-opacity: 0.15;
+          stroke-dashoffset: 0;
+        }
+      }
+
+      @-webkit-keyframes offset {
+        100% {
+          stroke-opacity: 0.15;
+          stroke-dashoffset: 0;
+        }
+      }
+
+      @keyframes disappear {
+        0% { opacity: 1;}
+        100%  { opacity: 0;}
+      }
+
+      @-webkit-keyframes disappear {
+        0% { opacity: 1;}
+        100%  { opacity: 0;}
+      }
+
+      @keyframes move-left {
+        0% { opacity: 0;}
+        50% { opacity: 1;}
+        100%  { opacity: 0;}
+      }
+
+      @-webkit-keyframes move-left {
+        0% { opacity: 0;}
+        50% { opacity: 1;}
+        100%  { opacity: 0;}
+      }
+    </style>
+    <g>
+    <path d="M4,3.2h14.5c8.6,0,12.9,3.4,12.9,10.2c0,3.4-1.5,6.2-4.4,8.4c4.3,1.9,6.4,5.2,6.4,9.9
+		c0,3.7-1.3,6.6-3.8,8.7c-1.2,1-2.5,1.8-4,2.2s-3.3,0.6-5.7,0.6h-2.3V32.9h2c1.2,0,2-0.2,2.5-0.5c0.5-0.3,0.7-0.8,0.7-1.6
+		c0-1.3-1-1.9-3-1.9h-2.3V18.2c2.2,0,3.3-0.8,3.3-2.3c0-1.4-1-2.1-3-2.1h-2.2v29.3H4V3.2z"/>
+	<path d="M57.2,2.2c5.7,0,10.5,2.1,14.6,6.2c4.1,4.1,6.1,9.1,6.1,14.8c0,5.8-2,10.8-6.1,14.9
+		c-4.1,4.1-9,6.1-14.9,6.1c-5.8,0-10.8-2.1-14.9-6.2s-6.2-9.1-6.2-14.9c0-5.9,2.1-10.8,6.2-14.9C46.2,4.2,51.2,2.2,57.2,2.2z
+		 M56.9,13.9c-2.4,0-4.5,0.9-6.2,2.7c-1.7,1.8-2.6,4-2.6,6.5c0,2.5,0.9,4.7,2.6,6.5c1.7,1.8,3.8,2.7,6.2,2.7c2.5,0,4.5-0.9,6.3-2.7
+		c1.7-1.8,2.6-4,2.6-6.5c0-2.6-0.9-4.7-2.6-6.5C61.4,14.8,59.3,13.9,56.9,13.9z"/>
+	<path d="M125,3.2V32c0,3.6-1.1,6.5-3.3,8.8c-2.2,2.3-5,3.4-8.4,3.4c-4.1,0-7.3-1.9-9.5-5.7
+		c-1.3,2-2.8,3.5-4.3,4.4c-1.5,0.9-3.4,1.3-5.7,1.3c-3.6,0-6.3-1.1-8.3-3.4c-1.9-2.3-2.9-5.5-2.9-9.8V3.2h11.9v26
+		c0,1.3,0.1,2.1,0.3,2.5c0.2,0.4,0.6,0.6,1.2,0.6c1.2,0,1.8-1,1.8-3V3.2h11.9v26c0,1.3,0.1,2.1,0.3,2.5c0.2,0.4,0.6,0.6,1.3,0.6
+		c1.2,0,1.8-1.1,1.8-3.2v-26H125z"/>
+	<path d="M153.5,18.7v8.9h-7.8c-1.1,0-1.8,0.2-2.2,0.5c-0.4,0.3-0.7,0.8-0.7,1.6c0,0.8,0.2,1.4,0.7,1.7
+		c0.4,0.3,1.4,0.4,2.8,0.4h8v11.4h-9.3c-4.4,0-7.8-1-10.1-3.1c-2.3-2.1-3.5-5.1-3.5-9.1V15.2c0-3.8,1.1-6.8,3.3-8.9s5.3-3.2,9.3-3.2
+		h10.3v11.5h-7.6c-2.1,0-3.1,0.7-3.1,2c0,0.8,0.2,1.3,0.7,1.6c0.5,0.3,1.4,0.5,2.6,0.5H153.5z"/>
+	<path d="M160.3,43.2v-26c0-4.6,1.4-8.2,4.1-10.9c2.7-2.7,6.4-4.1,10.9-4.1c4.5,0,8,1.3,10.4,4
+		c2.4,2.7,3.6,6.5,3.6,11.5v25.5h-11.9V17.6c0-2.4-0.9-3.7-2.6-3.7c-1.7,0-2.5,1.2-2.5,3.7v25.5H160.3z"/>
+	<path d="M203.4,18.3v-2.1c-2-0.1-3.5-0.8-4.8-2.1s-1.8-2.8-1.8-4.7c0-2,0.7-3.6,2-5c1.3-1.3,3-2,4.9-2
+		c1.9,0,3.5,0.7,4.8,2s1.9,3,1.9,5c0,2.1-0.6,3.9-1.9,5.5C207.3,16.5,205.6,17.6,203.4,18.3z"/>
+	<path d="M237.6,3v11.4c-0.9-0.3-1.5-0.4-2-0.4c-0.9,0-1.7,0.3-2.3,1c-0.6,0.7-1,1.5-1,2.4
+		c0,0.8,0.4,1.8,1.1,3l0.9,1.6c1.6,2.9,2.5,5.6,2.5,8.3c0,3.9-1.4,7.2-4.1,9.9s-6.1,4-10.1,4c-1.9,0-3.8-0.4-5.7-1.3V31.3
+		c1.1,0.7,2.1,1.1,3,1.1c1,0,1.9-0.3,2.6-0.9c0.7-0.6,1-1.3,1-2.2c0-0.6-0.6-1.9-1.7-3.8c-1.8-3.1-2.7-6.3-2.7-9.4
+		c0-3.8,1.3-7,4-9.7s5.9-4.1,9.6-4.1C234.4,2.2,236,2.4,237.6,3z"/>
+    </g>
+</svg>

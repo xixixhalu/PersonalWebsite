@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bgTexture.png) #37444b;
+}
+#content {
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  left: 20%;
+  width: 60%;
+  color: white;
+  opacity: 0.8;
+}
+#content h1,
+#content h2 {
+  font-family: "Courier New", sans-serif;
+  line-height: 1.4em;
+}
+#content h2 {
+  margin-left: 2em;
+}
+#menu {
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+#menu div {
+  margin-right: 10%;
+  text-transform: uppercase;
+}
+#logo {
+  transform-origin: 50% 50%;
+}
+#cursor {
+  animation: blink 1s infinite steps(1, start);
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+#bubbles {
+  text-align: center;
+}
+#bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 2em;
+  bottom: 1px;
+  opacity: 0;
+  animation: hello 25s infinite;
+  transition-timing-function: ease-in-out;
+}
+@keyframes hello {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.05;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(600deg);
+    opacity: 0;
+  }
+}
+@keyframes world {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.05;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(30deg);
+    opacity: 0;
+  }
+}
+#bubbles li:nth-child(1) {
+  left: 10%;
+}
+#bubbles li:nth-child(2) {
+  left: 25%;
+  animation-delay: 4s;
+  animation-duration: 30s;
+}
+#bubbles li:nth-child(3) {
+  left: 25%;
+  width: 55px;
+  height: 55px;
+  animation-delay: 2s;
+  animation-duration: 40s;
+  background-color: white;
+  color: #37444b;
+}
+#bubbles li:nth-child(4) {
+  left: 32%;
+  width: 35px;
+  height: 35px;
+  animation-delay: 10s;
+  animation-duration: 35s;
+}
+#bubbles li:nth-child(5) {
+  left: 70%;
+  animation-delay: 8s;
+  animation-duration: 34s;
+}
+#bubbles li:nth-child(6) {
+  left: 60%;
+  border: 5px solid white;
+  animation: world 40s infinite;
+  animation-delay: 10s;
+}
+.spotlight {
+  display: table;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+}
+.spotlight a {
+  display: table-cell;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  transition: background 1s, border-width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), text-shadow 0.5s;
+  color: #dddddd;
+  text-shadow: 0 0 20px #dddddd, 0 0 20px rgba(221, 221, 221, 0);
+  box-shadow: 0 0 0 rgba(221, 221, 221, 0), inset 0 0 0 rgba(221, 221, 221, 0);
+  background-image: radial-gradient(center, ellipse cover, rgba(221, 221, 221, 0) 0%, rgba(221, 221, 221, 0) 90%);
+  border: 0 dotted rgba(221, 221, 221, 0);
+}
+.spotlight a:hover {
+  color: #fff;
+  text-shadow: 0 0 50px #dddddd, 0 0 50px #dddddd;
+  background-image: radial-gradient(center, ellipse cover, rgba(221, 221, 221, 0.3) 0%, rgba(221, 221, 221, 0) 60%);
+}
+.spotlight:before,
+.spotlight:after,
+.spotlight a:after {
+  transition: 0.2s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  border: 60px dashed transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.spotlight:before {
+  animation: rotate 20s linear 0s infinite;
+  width: 180%;
+  height: 180%;
+  border: 3px dotted rgba(221, 221, 221, 0);
+  z-index: -1;
+}
+.spotlight:after {
+  animation: rotate 10s linear 0s infinite reverse;
+  border: 20px dashed rgba(221, 221, 221, 0);
+  width: 160%;
+  height: 160%;
+  z-index: -2;
+}
+.spotlight:nth-child(4):before {
+  border: 3px dotted rgba(221, 221, 221, 0.3);
+}
+.spotlight:nth-child(4):after {
+  border: 20px dashed rgba(221, 221, 221, 0.15);
+}
+.spotlight a:after {
+  animation: rotate 5s linear 0s infinite;
+  border: 18px dashed rgba(221, 221, 221, 0);
+  width: 120%;
+  height: 120%;
+}
+.spotlight:hover:before {
+  border-color: rgba(221, 221, 221, 0.3);
+}
+.spotlight:hover:after {
+  border-color: rgba(221, 221, 221, 0.1);
+}
+.spotlight:hover a:hover:after {
+  border-color: rgba(221, 221, 221, 0.3);
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@font-face {
+  font-family: "Courier New";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Awesome Font'), url('/font/Courier BOLDITALIC.ttf') format('ttf');
+}
