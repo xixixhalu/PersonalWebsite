@@ -1,0 +1,48 @@
+.navigation {
+    text-align: center;
+    width: 100%;
+    background-color: #222222;
+    opacity: 0.6;
+
+    padding-top: 0.5vmax;
+    padding-bottom: 0.5vmax;
+
+    font-size: 85%;
+    font-weight: 700;
+    letter-spacing: .45em;
+    text-transform: uppercase;
+}
+
+nav {
+    display: block;
+}
+
+.navigation ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.navigation li {
+    display: inline-block;
+    line-height: 2;
+    list-style: none;
+}
+
+.navigation li a {
+	font-family: "Courier New", sans-serif;
+    padding: .5em 1vmax;
+    color: white;
+    text-decoration: none;
+    transition: color .5s ease,border-color .5s ease,background .5s ease,opacity 1.5s ease;
+}
+
+.current a {
+	color: #fff;
+	text-shadow: 0 0 50px #dddddd, 0 0 50px #dddddd;
+	background-image: radial-gradient(center, ellipse cover, rgba(221, 221, 221, 0.3) 0%, rgba(221, 221, 221, 0) 60%);
+}

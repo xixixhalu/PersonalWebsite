@@ -47,6 +47,9 @@
 }
 
 #cursor {
+  position: relative;
+  top: 0.2em;
+  font-size: 1.2em;
   animation: blink 1s infinite steps(1, start);
   @keyframes blink {
     0%, 100% { opacity: 0; }
@@ -219,4 +222,10 @@
   font-weight: 400;
   src: local('Awesome Font'),
   url('/font/Courier BOLDITALIC.ttf') format('ttf');
+}
+
+#player {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

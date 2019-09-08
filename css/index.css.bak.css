@@ -131,22 +131,40 @@
   animation: world 40s infinite;
   animation-delay: 10s;
 }
-
 .spotlight {
   display: table;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   transform: translate(-50%, -50%);
 }
-
+.spotlight a {
+  display: table-cell;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  transition: background 1s, border-width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), text-shadow 0.5s;
+  color: #dddddd;
+  text-shadow: 0 0 20px #dddddd, 0 0 20px rgba(221, 221, 221, 0);
+  box-shadow: 0 0 0 rgba(221, 221, 221, 0), inset 0 0 0 rgba(221, 221, 221, 0);
+  background-image: radial-gradient(center, ellipse cover, rgba(221, 221, 221, 0) 0%, rgba(221, 221, 221, 0) 90%);
+  border: 0 dotted rgba(221, 221, 221, 0);
+}
+.spotlight a:hover {
+  color: #fff;
+  text-shadow: 0 0 50px #dddddd, 0 0 50px #dddddd;
+  background-image: radial-gradient(center, ellipse cover, rgba(221, 221, 221, 0.3) 0%, rgba(221, 221, 221, 0) 60%);
+}
 .spotlight:before,
-.spotlight:after {
+.spotlight:after,
+.spotlight a:after {
   transition: 0.2s ease-in-out;
   content: "";
   display: block;
   position: absolute;
   border-radius: 50%;
-  border: 20px dashed transparent;
+  border: 60px dashed transparent;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -159,22 +177,33 @@
   z-index: -1;
 }
 .spotlight:after {
-  animation: rotate 15s linear 0s infinite reverse;
-  border: 30px dashed rgba(221, 221, 221, 0);
-  width: 120%;
-  height: 120%;
+  animation: rotate 10s linear 0s infinite reverse;
+  border: 20px dashed rgba(221, 221, 221, 0);
+  width: 160%;
+  height: 160%;
   z-index: -2;
 }
+.spotlight:nth-child(4):before {
+  border: 3px dotted rgba(221, 221, 221, 0.3);
+}
+.spotlight:nth-child(4):after {
+  border: 20px dashed rgba(221, 221, 221, 0.15);
+}
+.spotlight a:after {
+  animation: rotate 5s linear 0s infinite;
+  border: 18px dashed rgba(221, 221, 221, 0);
+  width: 120%;
+  height: 120%;
+}
 .spotlight:hover:before {
-  border-color: rgba(221, 221, 221, 1);
+  border-color: rgba(221, 221, 221, 0.3);
 }
 .spotlight:hover:after {
-  border-color: rgba(221, 221, 221, 0.6);
+  border-color: rgba(221, 221, 221, 0.1);
 }
-.spotlight:hover {
-  border-color: rgba(221, 221, 221, 1);
+.spotlight:hover a:hover:after {
+  border-color: rgba(221, 221, 221, 0.3);
 }
-
 @keyframes rotate {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -190,14 +219,9 @@
   src: local('Awesome Font'), url('/font/Courier BOLDITALIC.ttf') format('ttf');
 }
 
-#header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#footer {
+#player {
   position: absolute;
   bottom: 0;
   width: 100%;
+  opacity: 0.6;
 }

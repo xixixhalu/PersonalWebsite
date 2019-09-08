@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="player"></div>
+    <script>
+
+        // fetch("https://music.huaji8.top/?id=528272281").then(function(res){return res.json()}).then(function(data){
+        //     let obj = {
+        //       name: data.info.songs[0].name,
+        //       artist: data.info.songs[0].ar.map(function(ar){ return ar.name }).join(','),
+        //       poster: data.pic.url,
+        //       lyric: data.lyric.lyric,
+        //       sublyric: data.lyric.tlyric,
+        //       src: data.url.url,
+        //       album: data.info.songs[0].al.name
+        //     }
+        //     console.log(obj);
+        // })
+
+      let player = new cplayer({
+        element: document.getElementById('player'),
+        width: '100%',
+        dropDownMenuMode: 'top',
+        volume: 0.5,
+        dark: true,
+        playlist: [
+            {
+                album: "MT1990-New Orlean's Jazz",
+                artist: "MT1990",
+                lyric: "", 
+                name: "Light Stream Etude", 
+                poster: "./music/109951162943214403.jpeg", 
+                src: "./music/4cf7_4d9e_4c84_e28af9ac7fdc317d683ff64f1fa43a3f.mp3",
+                sublyric: ""
+            }, 
+            {
+                album: "MappleZS",
+                artist: "MappleZS",
+                lyric: "",
+                name: "John O'Donnell（MappleZS remix）",
+                poster: "./music/109951163729541451.jpeg",
+                src: "./music/040e_0153_065c_3d1fe21b91692b87126d163a6fe5b31f.mp3",
+                sublyric: ""
+            },
+            {
+                album: "Hispano America (Instrumental)",
+                artist: "Rey Casas",
+                lyric: "",
+                name: "El Bimbo",
+                poster: "./music/109951163165569450.jpeg",
+                src: "./music/19fe_cadb_1c42_5712456491bd9801b111609ad3f0bd71.mp3",
+                sublyric: ""
+            },
+            {
+                album: "火车驶向云外，梦安魂于九霄",
+                artist: "刺猬",
+                lyric: "[00:00.000] 作曲 : 赵子健\n[00:01.000] 作词 : 赵子健\n[00:07.42]编曲：刺猬\n[00:34.16]我那些残梦 灵异九霄\n[00:40.42]徒忙漫奋斗 满目沧愁\n[00:47.66]在滑翔之后 完美坠落\n[00:54.25]在四维宇宙 眩目遨游\n[01:04.03]\n[01:28.32]我那些烂曲 流窜九州\n[01:34.75]云游魂飞奏 音愤符吼\n[01:41.65]在宿命身后 不停挥手\n[01:48.46]视死如归仇 毫无保留\n[01:55.90]\n[02:22.35]黑色的不是夜晚 是漫长的孤单\n[02:29.07]看脚下一片黑暗 望头顶星光璀璨\n[02:35.67]叹世万物皆可盼 唯真爱最短暂\n[02:42.50]失去的永不复返 世守恒而今倍还\n[02:49.38]摇旗呐喊的热情 携光阴渐远去\n[02:55.89]人世间悲喜烂剧 昼夜轮播不停\n[03:02.80]纷飞的滥情男女 情仇爱恨别离\n[03:09.55]一代人终将老去 但总有人正年轻\n[05:09.41]演奏：刺猬\n[05:10.35]制作人：李青\n[05:11.30]录音：王耀唯\n[05:12.27]混音：王耀唯\n[05:13.29]母带：韩冬\n[05:07.32]\n",
+                name: "火车驶向云外，梦安魂于九霄",
+                poster: "./music/109951163102691938.jpeg",
+                src: "./music/69f0_b1c9_329a_3515c7ec7033951556d4f963f8b99309.mp3",
+                sublyric: ""
+            }
+
+
+
+        ]
+      });
+
+    </script>
+</body>
+</html>
+
