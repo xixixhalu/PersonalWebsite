@@ -7,7 +7,9 @@
   margin: 20px 0 0 -45px;
 
   opacity: 0.3;
+  filter: blur(4px) drop-shadow(0 0 40px white);
 }
+
 .ghost__eyes, .ghost__mouth {
   position: absolute;
   z-index: 1;
@@ -36,6 +38,16 @@
   trasform-origin: center bottom;
   overflow: hidden;
 }
+
+.ghost__body {
+  background: #fff;
+  height: 100px;
+  width: 100%;
+  border-radius: 40px 40px 5px 5px;
+
+  overflow: hidden;
+}
+
 .ghost__tail {
   position: absolute;
   z-index: -1;
@@ -53,7 +65,7 @@
   left: 0;
   height: 100px;
   width: 100%;
-  border-radius: 40px 40px 5px 5px;
+  border-radius: 60px 60px 5px 5px;
 }
 .ghost__rip {
   width: 15px;
