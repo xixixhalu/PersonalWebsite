@@ -43,6 +43,5 @@ nav {
 
 .current a {
 	color: #fff;
-	text-shadow: 0 0 50px #dddddd, 0 0 50px #dddddd;
-	background-image: radial-gradient(center, ellipse cover, rgba(221, 221, 221, 0.3) 0%, rgba(221, 221, 221, 0) 60%);
+	text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
 }
